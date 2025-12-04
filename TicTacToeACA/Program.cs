@@ -3,17 +3,17 @@
  * [,]
  * [][]
  */
- /*
-  * 1 2 3
-  * 4 5 6
-  * 7 8 9
-*/
+/*
+ * 1 2 3
+ * 4 5 6
+ * 7 8 9
+ */
 
- /*
-  * 0 1 2
-  * 3 4 5 5%3=X:2 5/3=Y:1 
-  * 6 7 8
-  */
+/*
+ * 0 1 2
+ * 3 4 5 5%3=X:2 5/3=Y:1
+ * 6 7 8
+ */
 
 /*
  * X X X
@@ -25,6 +25,16 @@
 // X X X 4 5 6 7 8 9
 
 using TicTacToeACA;
+using TicTacToeACA.Core;
 
-GameEngine gameEngine=new GameEngine();
-gameEngine.Run();
+namespace TicTacToeACA
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var gameEngine = new GameEngine();
+            gameEngine.Run();
+        }
+    }
+}

@@ -1,4 +1,4 @@
-namespace TicTacToeACA;
+namespace TicTacToeACA.Rendering;
 
 public enum TextStyle
 {

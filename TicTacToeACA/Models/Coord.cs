@@ -1,4 +1,4 @@
-namespace TicTacToeACA;
+namespace TicTacToeACA.Models;
 
 public struct Coord
 {
@@ -25,6 +25,12 @@ public struct Coord
     {
         return new Coord(left.X - right.X, left.Y - right.Y);
     }
+    
+    public static Coord operator *(Coord left, int value)
+    {
+        return new Coord(left.X * value, left.Y * value);
+    }
+
 
     public static bool operator ==(Coord left, Coord right)
     {

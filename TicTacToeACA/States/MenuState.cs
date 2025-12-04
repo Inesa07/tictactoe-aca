@@ -1,4 +1,6 @@
-namespace TicTacToeACA;
+using TicTacToeACA.Core;
+
+namespace TicTacToeACA.States;
 
 public class MenuState : GameState
 {

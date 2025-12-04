@@ -1,4 +1,6 @@
-namespace TicTacToeACA;
+using TicTacToeACA.Models.Board;
+
+namespace TicTacToeACA.Players;
 
 public abstract class Player
 {

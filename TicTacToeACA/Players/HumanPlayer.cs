@@ -1,4 +1,7 @@
-namespace TicTacToeACA;
+using TicTacToeACA.Models;
+using TicTacToeACA.Models.Board;
+
+namespace TicTacToeACA.Players;
 
 public class HumanPlayer : Player
 {
@@ -7,7 +10,7 @@ public class HumanPlayer : Player
     public HumanPlayer(string name, char symbol) : base(name, symbol)
     {
     }
-
+    
     public override int GetMove(IBoard board)
     {
         int move = -1;
@@ -17,16 +20,16 @@ public class HumanPlayer : Player
         switch (key)
         {
             case ConsoleKey.LeftArrow:
-                _selectedGridPosition = MoveInDirection(Coord.Left);
+                _selectedGridPosition = MoveInDirection(Coord.Left,board);
                 break;
             case ConsoleKey.RightArrow:
-                _selectedGridPosition = MoveInDirection(Coord.Right);
+                _selectedGridPosition = MoveInDirection(Coord.Right,board);
                 break;
             case ConsoleKey.UpArrow:
-                _selectedGridPosition = MoveInDirection(Coord.Up);
+                _selectedGridPosition = MoveInDirection(Coord.Up,board);
                 break;
             case ConsoleKey.DownArrow:
-                _selectedGridPosition = MoveInDirection(Coord.Down);
+                _selectedGridPosition = MoveInDirection(Coord.Down,board);
                 break;
             case ConsoleKey.Enter:
                 move = GridToLinearPosition(_selectedGridPosition);
@@ -42,7 +45,7 @@ public class HumanPlayer : Player
         return move;
     }
 
-    private Coord MoveInDirection(Coord direction)
+    private Coord MoveInDirection(Coord direction,IBoard board)
     {
         Coord newPosition = _selectedGridPosition + direction;
         return Coord.Clamp(newPosition, Coord.Zero, Board.Bounds - Coord.One);
@@ -57,4 +60,7 @@ public class HumanPlayer : Player
     {
         return new Coord(position % Board.Width, position / Board.Width);
     }
+
+    public int GetSelectedPosition() => GridToLinearPosition(_selectedGridPosition);
+
 }

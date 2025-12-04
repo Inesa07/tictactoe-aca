@@ -1,4 +1,6 @@
-namespace TicTacToeACA;
+using TicTacToeACA.Models;
+
+namespace TicTacToeACA.Rendering;
 
 public interface IRenderer
 {
