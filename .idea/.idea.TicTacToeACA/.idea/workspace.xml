@@ -8,23 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="258f2e7f-780f-4cd5-aa0e-74ff7d7fb4ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TicTacToeACA/Models/Board/IBoard.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToeACA/Models/Difficulty.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToeACA/Rendering/ConsoleRenderer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToeACA/States/GameOverState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TicTacToeACA/States/PlayingState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/AiPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Players/AiPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/Board.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Models/Board/Board.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/CellStyle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Rendering/CellStyle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/Coord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Models/Coord.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/GameEngine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Core/GameEngine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/GameState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/States/GameState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/HumanPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Players/HumanPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/IRenderer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Rendering/IRenderer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/MenuState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/States/MenuState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Players/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/TextStyle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Rendering/TextStyle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TicTacToeACA/Statistics/Statistics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TicTacToeACA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TicTacToeACA/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToeACA/Core/GameEngine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TicTacToeACA/Players/AiPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Players/AiPlayer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +24,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Inesa07&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Inesa07/tictactoe-aca.git&quot;,
+    &quot;accountId&quot;: &quot;b4ae5900-dd5d-468b-b75c-fc75805f1439&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToeACA/Models/Difficulty.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/TicTacToeACA/States/GameOverState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToeACA/States/PlayingState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -59,13 +59,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,10 +76,8 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -104,12 +103,15 @@
       <workItem from="1764699959310" duration="2503000" />
       <workItem from="1764863869926" duration="5004000" />
       <workItem from="1764868921031" duration="3539000" />
+      <workItem from="1765117532534" duration="4225000" />
+      <workItem from="1765122190256" duration="4360000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -183,5 +185,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

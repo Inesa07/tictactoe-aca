@@ -3,6 +3,8 @@ using TicTacToeACA.Models.Board;
 using TicTacToeACA.Players;
 using TicTacToeACA.Rendering;
 using TicTacToeACA.States;
+using TicTacToeACA.Statistics;
+
 
 namespace TicTacToeACA.Core;
 
@@ -14,6 +16,8 @@ public class GameEngine
     private Player _player2;
     private Player _currentPlayer;
     private GameState _currentState;
+    private StatisticsManager _statistics;
+
 
     private bool _running;
     private string _lastResult;
@@ -24,6 +28,8 @@ public class GameEngine
         _renderer = new ConsoleRenderer();
         _board = new Board(_renderer);
         _currentState = new MenuState();
+        _statistics = new StatisticsManager();
+
     }
 
     public void Run()
@@ -97,14 +103,20 @@ public class GameEngine
         switch (selectedOption)
         {
             case 0:
+                SetupPvPv();
+                _currentState = new PlayingState();
                 break;
             case 1:
                 SetupPvAi();
                 _currentState = new PlayingState();
                 break;
             case 2:
+                _statistics.DisplayStatistics();
                 break;
             case 3:
+                _statistics.ResetStatistics();
+                Console.WriteLine("Statistics have been reset. Press any key to continue...");
+                Console.ReadKey();
                 break;
             case 4:
                 ShowInstructions();
@@ -115,6 +127,20 @@ public class GameEngine
         }
     }
 
+    private void SetupPvPv()
+    {
+        _renderer?.Clear();
+        Console.Write("Enter name for Player 1: ");
+        string nameOfFirstPlayer = Console.ReadLine();
+        
+        Console.Write("Enter name for Player 2: ");
+        string nameOfSecondPlayer = Console.ReadLine();
+        
+        _player1 = new HumanPlayer(nameOfFirstPlayer, 'X');
+        _player2 = new HumanPlayer(nameOfSecondPlayer, 'O');
+        
+        _currentPlayer = _player1;
+    }
     private void SetupPvAi()
     {
         _renderer?.Clear();
@@ -199,6 +225,7 @@ public class GameEngine
             if (_board.CheckWin(_currentPlayer.Symbol))
             {
                 _lastResult = $"{_currentPlayer.Name} wins!";
+                _statistics.AddResult(_currentPlayer == _player1 ? "Player1" : (_currentPlayer == _player2 && _player2 is AiPlayer ? "AI" : "Player2"), _player2 is AiPlayer);
                 _currentState = new GameOverState();
                 return;
             }
@@ -206,6 +233,7 @@ public class GameEngine
             if (_board.IsFull())
             {
                 _lastResult = ":) Tie Game!";
+                _statistics.AddResult("Tie");
                 _currentState = new GameOverState();
                 return;
             }
