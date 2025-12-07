@@ -7,12 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="258f2e7f-780f-4cd5-aa0e-74ff7d7fb4ee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TicTacToeACA/Statistics/Statistics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TicTacToeACA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TicTacToeACA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/Core/GameEngine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TicTacToeACA/Players/AiPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TicTacToeACA/Players/AiPlayer.cs" afterDir="false" />
-    </list>
+    <list default="true" id="258f2e7f-780f-4cd5-aa0e-74ff7d7fb4ee" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,8 +32,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToeACA/Models/Difficulty.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Lenovo/OneDrive/Desktop/tictactoe-aca/TicTacToeACA/Players/AiPlayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToeACA/Rendering/ConsoleRenderer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToeACA/States/GameOverState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TicTacToeACA/States/PlayingState.cs" root0="FORCE_HIGHLIGHTING" />
@@ -104,8 +99,17 @@
       <workItem from="1764863869926" duration="5004000" />
       <workItem from="1764868921031" duration="3539000" />
       <workItem from="1765117532534" duration="4225000" />
-      <workItem from="1765122190256" duration="4360000" />
+      <workItem from="1765122190256" duration="4691000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed code">
+      <option name="closed" value="true" />
+      <created>1765126680027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765126680027</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +119,8 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Changed code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
